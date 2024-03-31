@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hospital Management System</title>
+    <link rel="stylesheet" href="css/login-reg-styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <br>
+            <button type="submit" class="btn">Login</button>
+            <br>
+            <p id="login-message"></p>
+            <div class="sign-link">
+                <p>Don't have an account? <a href="reg.html" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
