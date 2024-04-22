@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System - Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="dashboard" class="wrapper">
+        <h2>Patient Details Management</h2>
+        <!-- Add New Patient Form -->
+        <h3>Add New Patient</h3>
+        <form id="addPatientForm">
+            <div class="form-group">
+                <label for="patientName">Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+            <!-- Add other input fields as required -->
+            <button type="submit">Add Patient</button>
+        </form>
+
+        <!-- Edit Existing Patient Form -->
+        <h3>Edit Existing Patient</h3>
+        <form id="editPatientForm">
+            <div class="form-group">
+                <label for="editPatientId">Patient ID:</label>
+                <input type="text" id="editPatientId" name="editPatientId" required>
+            </div>
+            <!-- Add other input fields as required -->
+            <button type="submit">Edit Patient</button>
+        </form>
+
+        <!-- Delete Existing Patient Form -->
+        <h3>Delete Existing Patient</h3>
+        <form id="deletePatientForm">
+            <div class="form-group">
+                <label for="deletePatientId">Patient ID:</label>
+                <input type="text" id="deletePatientId" name="deletePatientId" required>
+            </div>
+            <button type="submit">Delete Patient</button>
+        </form>
+
+        <!-- View Active Patients -->
+        <h3>Active Patients</h3>
+        <div id="activePatientsList">
+            <!-- Active patients list will be displayed here -->
+        </div>
+        
+        <!-- Billing Section -->
+        <h3>Patient Billing</h3>
+        <form id="billingForm">
+            <div class="form-group">
+                <label for="patientIdBilling">Patient ID:</label>
+                <input type="text" id="patientIdBilling" name="patientIdBilling" required>
+            </div>
+            <button type="submit">Calculate Bill</button>
+        </form>
+        <div id="billingDetails"></div>
+
+    </div>
+
+    <script src="../js/admin-dashboard.js"></script>
+</body>
+</html>

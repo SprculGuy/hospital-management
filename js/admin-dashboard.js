@@ -66,7 +66,7 @@ function displayActivePatients() {
 
 // Function to generate unique patient ID (for simulation)
 function generateUniqueId() {
-    return Math.random().toString(36).substring(2, 9); // Generates a random alphanumeric string
+    return Math.floor(Math.random() * 900) + 100; // Generates a random alphanumeric string
 }
 
 // Function to show messages
@@ -100,8 +100,8 @@ document.getElementById('deletePatientForm').addEventListener('submit', function
 });
 
 // Simulated initial data (can be replaced with actual data retrieval logic)
-activePatients.push({ id: generateUniqueId(), name: 'John Doe' });
-activePatients.push({ id: generateUniqueId(), name: 'Jane Smith' });
+activePatients.push({ id: generateUniqueId(), name: 'Ram Chatur' });
+activePatients.push({ id: generateUniqueId(), name: 'Shyam Chetri' });
 
 // Display active patients initially
 displayActivePatients();
